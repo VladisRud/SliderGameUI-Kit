@@ -13,6 +13,8 @@
 		584B20FC2C2C03FB00DC0722 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584B20FB2C2C03FB00DC0722 /* Preview Assets.xcassets */; };
 		584B21032C2C048400DC0722 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584B21022C2C048400DC0722 /* ButtonsView.swift */; };
 		584B21252C2C074300DC0722 /* SliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584B21242C2C074300DC0722 /* SliderRepresentation.swift */; };
+		584B21292C2C095200DC0722 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584B21282C2C095200DC0722 /* Score.swift */; };
+		584B212B2C2C1ABE00DC0722 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584B212A2C2C1ABE00DC0722 /* ScoreManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		584B20FB2C2C03FB00DC0722 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		584B21022C2C048400DC0722 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		584B21242C2C074300DC0722 /* SliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderRepresentation.swift; sourceTree = "<group>"; };
+		584B21282C2C095200DC0722 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		584B212A2C2C1ABE00DC0722 /* ScoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58269C292C2D4539005F2628 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				584B20F62C2C03FA00DC0722 /* ContentView.swift */,
+				584B21242C2C074300DC0722 /* SliderRepresentation.swift */,
+				584B21022C2C048400DC0722 /* ButtonsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58269C2A2C2D4548005F2628 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				584B21282C2C095200DC0722 /* Score.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58269C2B2C2D4550005F2628 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				584B212A2C2C1ABE00DC0722 /* ScoreManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		584B20E82C2C03FA00DC0722 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				584B20F42C2C03FA00DC0722 /* SliderGameUI_KitApp.swift */,
-				584B20F62C2C03FA00DC0722 /* ContentView.swift */,
-				584B21242C2C074300DC0722 /* SliderRepresentation.swift */,
-				584B21022C2C048400DC0722 /* ButtonsView.swift */,
+				58269C292C2D4539005F2628 /* View */,
 				584B20F82C2C03FB00DC0722 /* Assets.xcassets */,
+				58269C2B2C2D4550005F2628 /* Services */,
+				58269C2A2C2D4548005F2628 /* Model */,
 				584B20FA2C2C03FB00DC0722 /* Preview Content */,
 			);
 			path = "SliderGameUI+Kit";
@@ -143,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				584B212B2C2C1ABE00DC0722 /* ScoreManager.swift in Sources */,
 				584B21032C2C048400DC0722 /* ButtonsView.swift in Sources */,
 				584B20F72C2C03FA00DC0722 /* ContentView.swift in Sources */,
 				584B20F52C2C03FA00DC0722 /* SliderGameUI_KitApp.swift in Sources */,
 				584B21252C2C074300DC0722 /* SliderRepresentation.swift in Sources */,
+				584B21292C2C095200DC0722 /* Score.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
